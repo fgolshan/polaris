@@ -22,10 +22,10 @@ for ctr in "${CS_CONTAINERS[@]}"; do
   # docker cp "$BIN_DIR/control"    "$ctr:/usr/bin/scion-control-service"
   # docker cp "$BIN_DIR/dispatcher" "$ctr:/usr/bin/scion-dispatcher"
   # docker cp "$BIN_DIR/daemon"     "$ctr:/usr/bin/scion-daemon"
-  docker cp "$BIN_DIR/scion"      "$ctr:/bin/scion/scion"
-  docker cp "$BIN_DIR/control"    "$ctr:/bin/scion/control"
-  docker cp "$BIN_DIR/dispatcher" "$ctr:/bin/scion/dispatcher"
-  docker cp "$BIN_DIR/daemon"     "$ctr:/bin/scion/daemon"
+   docker cp "$BIN_DIR/scion"      "$ctr:/bin/scion/scion"
+  # docker cp "$BIN_DIR/control"    "$ctr:/bin/scion/control"
+  # docker cp "$BIN_DIR/dispatcher" "$ctr:/bin/scion/dispatcher"
+  # docker cp "$BIN_DIR/daemon"     "$ctr:/bin/scion/daemon"
   # docker restart "$ctr"
 done
 
