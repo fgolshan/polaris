@@ -14,6 +14,7 @@ for arg in "$@"; do
 done
 
 BIN_DIR="$(pwd)/../scionproto/bin"
+BIN_DIR_APPS="$(pwd)/../scion-apps/bin"
 
 # Find containers by role
 BR_CONTAINERS=( $(docker ps -a --format "{{.Names}}" | grep 'br_') )
@@ -26,11 +27,19 @@ for bin in scion control dispatcher daemon router; do
     exit 1
   fi
 done
+for bin in scion-bwtestclient scion-bwtestserver; do
+  if [ ! -x "${BIN_DIR_APPS}/${bin}" ]; then
+    echo "Error: Missing binary ${BIN_DIR_APPS}/${bin}" >&2
+    exit 1
+  fi
+done
 
 # Update CONTROL-SERVICE containers
 for ctr in "${CS_CONTAINERS[@]}"; do
   echo; echo "→ ${ctr} (control-service)"
   docker cp "${BIN_DIR}/scion" "${ctr}:/bin/scion/scion"
+  docker cp "${BIN_DIR_APPS}/scion-bwtestclient" "${ctr}:/bin/scion/scion-bwtestclient"
+  docker cp "${BIN_DIR_APPS}/scion-bwtestserver" "${ctr}:/bin/scion/scion-bwtestserver"
 done
 
 # Update BORDER-ROUTER containers
