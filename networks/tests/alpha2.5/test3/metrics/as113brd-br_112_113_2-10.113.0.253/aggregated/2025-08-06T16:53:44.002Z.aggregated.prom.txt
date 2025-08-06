@@ -1,0 +1,50 @@
+# HELP router_dropped_pkts_total Total number of packets dropped by the router.
+# TYPE router_dropped_pkts_total counter
+router_dropped_pkts_total{interface="->1",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->3",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->4",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->5",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="2",isd_as="1-113",neighbor_isd_as="1-112"} 2404
+router_dropped_pkts_total{interface="internal",isd_as="1-113",neighbor_isd_as="1-113"} 581
+router_dropped_pkts_total{interface="physical_local",isd_as="1-113",neighbor_isd_as="local"} 581
+router_dropped_pkts_total{interface="physical_remote",isd_as="1-113",neighbor_isd_as="remote"} 2404
+# HELP router_input_bytes_total Total number of bytes received
+# TYPE router_input_bytes_total counter
+router_input_bytes_total{interface="->1",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->3",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->4",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->5",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="2",isd_as="1-113",neighbor_isd_as="1-112"} 431256077
+router_input_bytes_total{interface="internal",isd_as="1-113",neighbor_isd_as="1-113"} 396028069
+router_input_bytes_total{interface="physical_local",isd_as="1-113",neighbor_isd_as="local"} 396028069
+router_input_bytes_total{interface="physical_remote",isd_as="1-113",neighbor_isd_as="remote"} 431256077
+# HELP router_input_pkts_total Total number of packets received
+# TYPE router_input_pkts_total counter
+router_input_pkts_total{interface="->1",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->3",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->4",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->5",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="2",isd_as="1-113",neighbor_isd_as="1-112"} 1348103
+router_input_pkts_total{interface="internal",isd_as="1-113",neighbor_isd_as="1-113"} 1278694
+router_input_pkts_total{interface="physical_local",isd_as="1-113",neighbor_isd_as="local"} 1278694
+router_input_pkts_total{interface="physical_remote",isd_as="1-113",neighbor_isd_as="remote"} 1348103
+# HELP router_output_bytes_total Total number of bytes sent.
+# TYPE router_output_bytes_total counter
+router_output_bytes_total{interface="->1",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->3",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->4",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->5",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="2",isd_as="1-113",neighbor_isd_as="1-112"} 402434406
+router_output_bytes_total{interface="internal",isd_as="1-113",neighbor_isd_as="1-113"} 423975161
+router_output_bytes_total{interface="physical_local",isd_as="1-113",neighbor_isd_as="local"} 423975161
+router_output_bytes_total{interface="physical_remote",isd_as="1-113",neighbor_isd_as="remote"} 402434406
+# HELP router_output_pkts_total Total number of packets sent.
+# TYPE router_output_pkts_total counter
+router_output_pkts_total{interface="->1",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->3",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->4",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->5",isd_as="1-113",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="2",isd_as="1-113",neighbor_isd_as="1-112"} 1339004
+router_output_pkts_total{interface="internal",isd_as="1-113",neighbor_isd_as="1-113"} 1284706
+router_output_pkts_total{interface="physical_local",isd_as="1-113",neighbor_isd_as="local"} 1284706
+router_output_pkts_total{interface="physical_remote",isd_as="1-113",neighbor_isd_as="remote"} 1339004

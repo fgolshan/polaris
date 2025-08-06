@@ -1,0 +1,60 @@
+# HELP router_dropped_pkts_total Total number of packets dropped by the router.
+# TYPE router_dropped_pkts_total counter
+router_dropped_pkts_total{interface="->1",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->2",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->3",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->5",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->6",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="->7",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_dropped_pkts_total{interface="4",isd_as="1-112",neighbor_isd_as="1-113"} 1162
+router_dropped_pkts_total{interface="internal",isd_as="1-112",neighbor_isd_as="1-112"} 105
+router_dropped_pkts_total{interface="physical_local",isd_as="1-112",neighbor_isd_as="local"} 105
+router_dropped_pkts_total{interface="physical_remote",isd_as="1-112",neighbor_isd_as="remote"} 1162
+# HELP router_input_bytes_total Total number of bytes received
+# TYPE router_input_bytes_total counter
+router_input_bytes_total{interface="->1",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->2",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->3",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->5",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->6",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="->7",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_bytes_total{interface="4",isd_as="1-112",neighbor_isd_as="1-113"} 372982954
+router_input_bytes_total{interface="internal",isd_as="1-112",neighbor_isd_as="1-112"} 402746451
+router_input_bytes_total{interface="physical_local",isd_as="1-112",neighbor_isd_as="local"} 402746451
+router_input_bytes_total{interface="physical_remote",isd_as="1-112",neighbor_isd_as="remote"} 372982954
+# HELP router_input_pkts_total Total number of packets received
+# TYPE router_input_pkts_total counter
+router_input_pkts_total{interface="->1",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->2",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->3",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->5",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->6",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="->7",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_input_pkts_total{interface="4",isd_as="1-112",neighbor_isd_as="1-113"} 1265126
+router_input_pkts_total{interface="internal",isd_as="1-112",neighbor_isd_as="1-112"} 1278670
+router_input_pkts_total{interface="physical_local",isd_as="1-112",neighbor_isd_as="local"} 1278670
+router_input_pkts_total{interface="physical_remote",isd_as="1-112",neighbor_isd_as="remote"} 1265126
+# HELP router_output_bytes_total Total number of bytes sent.
+# TYPE router_output_bytes_total counter
+router_output_bytes_total{interface="->1",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->2",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->3",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->5",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->6",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="->7",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_bytes_total{interface="4",isd_as="1-112",neighbor_isd_as="1-113"} 402275960
+router_output_bytes_total{interface="internal",isd_as="1-112",neighbor_isd_as="1-112"} 372982954
+router_output_bytes_total{interface="physical_local",isd_as="1-112",neighbor_isd_as="local"} 372982954
+router_output_bytes_total{interface="physical_remote",isd_as="1-112",neighbor_isd_as="remote"} 402275960
+# HELP router_output_pkts_total Total number of packets sent.
+# TYPE router_output_pkts_total counter
+router_output_pkts_total{interface="->1",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->2",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->3",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->5",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->6",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="->7",isd_as="1-112",neighbor_isd_as="unknown"} 0
+router_output_pkts_total{interface="4",isd_as="1-112",neighbor_isd_as="1-113"} 1277384
+router_output_pkts_total{interface="internal",isd_as="1-112",neighbor_isd_as="1-112"} 1265126
+router_output_pkts_total{interface="physical_local",isd_as="1-112",neighbor_isd_as="local"} 1265126
+router_output_pkts_total{interface="physical_remote",isd_as="1-112",neighbor_isd_as="remote"} 1277384
