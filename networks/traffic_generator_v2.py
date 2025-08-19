@@ -204,10 +204,20 @@ def run_session(spec, out_dir, port_pool):
         ]
         cs_arg = ",".join(cs)
 
+        # For S->C always use 0 Mbps rate
+        sc = [
+            str(int(duration)),
+            str(pkt_size) if pkt_size else "?",
+            "?",
+            "0Mbps",
+        ]
+        sc_arg = ",".join(sc)
+
         client_cmd = [
             "scion-bwtestclient",
             "-s", f"{server_addr}:{port}",
             "-cs", cs_arg,
+            "-sc", sc_arg,
             "--transport=" + transport,
         ]
         if selector != "default":
@@ -293,10 +303,19 @@ def main():
 
     metrics_collector.stop()
 
-    spec_basename = os.path.basename(args.spec_file)
-    dst = os.path.join(args.out_dir, spec_basename)
-    shutil.copy(args.spec_file, dst)
-    print(f"Copied spec file to {dst}")
+    # spec_basename = os.path.basename(args.spec_file)
+    # dst = os.path.join(args.out_dir, spec_basename)
+    dst = Path(args.out_dir) / Path(args.spec_file).name
+    try:
+    # Only copy if source and destination are not the same file
+        if not (dst.exists() and os.path.samefile(args.spec_file, dst)):
+            shutil.copy2(args.spec_file, dst)
+            print(f"Copied spec file to {dst}")
+        else:
+            print(f"[spec] {dst} already in output dir; skipping copy")
+    except FileNotFoundError:
+        # If args.spec_file vanished or path issues—just skip copying
+        print(f"[spec] could not copy spec (missing?) {args.spec_file}, skipping")
 
 if __name__ == "__main__":
     main()

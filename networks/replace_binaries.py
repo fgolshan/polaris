@@ -38,6 +38,8 @@ def copy_binaries(cs_containers, br_containers, bin_dir, bin_apps_dir):
         run(["docker", "cp", str(Path(bin_dir) / "scion"), f"{ctr}:/bin/scion/scion"])
         run(["docker", "cp", str(Path(bin_apps_dir) / "scion-bwtestclient"), f"{ctr}:/bin/scion/scion-bwtestclient"])
         run(["docker", "cp", str(Path(bin_apps_dir) / "scion-bwtestserver"), f"{ctr}:/bin/scion/scion-bwtestserver"])
+        run(["docker", "cp", str(Path(bin_apps_dir) / "scion-bwtestclient"), f"{ctr}:/usr/bin/scion-bwtestclient"])
+        run(["docker", "cp", str(Path(bin_apps_dir) / "scion-bwtestserver"), f"{ctr}:/usr/bin/scion-bwtestserver"])
     for ctr in br_containers:
         print(f"\n→ {ctr} (border-router)")
         run(["docker", "cp", str(Path(bin_dir) / "scion"), f"{ctr}:/bin/scion/scion"])
