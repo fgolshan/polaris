@@ -1,0 +1,93 @@
+{
+  "attributes": [
+    "authoritative",
+    "issuing",
+    "voting",
+    "core"
+  ],
+  "isd_as": "1-113",
+  "mtu": 1400,
+  "control_service": {
+    "cs_1": {
+      "addr": "10.113.0.71:30254"
+    }
+  },
+  "discovery_service": {
+    "cs_1": {
+      "addr": "10.113.0.71:30254"
+    }
+  },
+  "border_routers": {
+    "br_112_113_1": {
+      "internal_addr": "10.113.0.254:30042",
+      "interfaces": {
+        "1": {
+          "underlay": {
+            "local": "10.1.0.27:50000",
+            "remote": "10.1.0.26:50000"
+          },
+          "isd_as": "1-112",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_112_113_2": {
+      "internal_addr": "10.113.0.253:30042",
+      "interfaces": {
+        "2": {
+          "underlay": {
+            "local": "10.1.0.35:50000",
+            "remote": "10.1.0.34:50000"
+          },
+          "isd_as": "1-112",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_113_114_1": {
+      "internal_addr": "10.113.0.252:30042",
+      "interfaces": {
+        "3": {
+          "underlay": {
+            "local": "10.1.0.42:50000",
+            "remote": "10.1.0.43:50000"
+          },
+          "isd_as": "1-114",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_113_114_2": {
+      "internal_addr": "10.113.0.251:30042",
+      "interfaces": {
+        "4": {
+          "underlay": {
+            "local": "10.1.0.50:50000",
+            "remote": "10.1.0.51:50000"
+          },
+          "isd_as": "1-114",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_113_114_3": {
+      "internal_addr": "10.113.0.250:30042",
+      "interfaces": {
+        "5": {
+          "underlay": {
+            "local": "10.1.0.58:50000",
+            "remote": "10.1.0.59:50000"
+          },
+          "isd_as": "1-114",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    }
+  },
+  "dispatched_ports": "31000-32767"
+}

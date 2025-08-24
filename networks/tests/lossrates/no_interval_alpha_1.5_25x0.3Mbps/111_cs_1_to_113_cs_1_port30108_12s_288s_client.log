@@ -1,0 +1,355 @@
+Only cs parameter set, using same values for sc
+
+Test parameters:
+client->server: 288 seconds, 1000 bytes, 10800 packets
+server->client: 288 seconds, 1000 bytes, 10800 packets
+2025/08/09 10:59:33 POLARIS_LOG {"current_rate":0,"event":"path_switch","new":"2 2 5 2","trigger":"initialization","ts":1754737173.5489383}
+Polaris prober initialized with local 1-111,10.111.0.71:32752 and remote 1-113,10.113.0.71
+2025/08/09 10:59:34 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737174.5506122}
+2025/08/09 10:59:35 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737175.552882}
+2025/08/09 10:59:36 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737176.5500014}
+2025/08/09 10:59:37 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737177.5507772}
+2025/08/09 10:59:38 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737178.5524275}
+2025/08/09 10:59:39 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737179.5501149}
+2025/08/09 10:59:40 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737180.5498009}
+2025/08/09 10:59:41 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737181.5502567}
+2025/08/09 10:59:42 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737182.5505462}
+2025/08/09 10:59:43 POLARIS_LOG {"candidates":2,"current_rate":304000,"estimated_share":600000,"event":"path_switch","new":"3 3 7 7 1 3","old":"2 2 5 2","trigger":"scheduled","ts":1754737183.5502257}
+2025/08/09 10:59:43 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737183.5502548}
+2025/08/09 10:59:44 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737184.550263}
+2025/08/09 10:59:45 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737185.5497973}
+2025/08/09 10:59:46 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737186.5500932}
+2025/08/09 10:59:47 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737187.5506933}
+2025/08/09 10:59:48 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737188.55067}
+2025/08/09 10:59:49 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737189.5513408}
+2025/08/09 10:59:50 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737190.5556629}
+2025/08/09 10:59:51 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737191.5505714}
+2025/08/09 10:59:52 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737192.5505197}
+2025/08/09 10:59:53 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737193.5507846}
+2025/08/09 10:59:54 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737194.5500324}
+2025/08/09 10:59:55 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737195.5506716}
+2025/08/09 10:59:56 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737196.5502608}
+2025/08/09 10:59:57 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737197.5498137}
+2025/08/09 10:59:58 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737198.5503206}
+2025/08/09 10:59:59 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737199.5498407}
+2025/08/09 11:00:00 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737200.5500078}
+2025/08/09 11:00:01 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737201.5507708}
+2025/08/09 11:00:02 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737202.5502863}
+2025/08/09 11:00:03 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737203.5502434}
+2025/08/09 11:00:04 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737204.5499241}
+2025/08/09 11:00:05 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737205.553194}
+2025/08/09 11:00:06 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737206.5499187}
+2025/08/09 11:00:07 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737207.5505824}
+2025/08/09 11:00:08 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737208.5501928}
+2025/08/09 11:00:09 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737209.550646}
+2025/08/09 11:00:10 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737210.54995}
+2025/08/09 11:00:11 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737211.5505574}
+2025/08/09 11:00:12 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737212.5505195}
+2025/08/09 11:00:13 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737213.549804}
+Received SCMP echo reply with unexpected seq 38, expected 40 or 39
+2025/08/09 11:00:14 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737214.550644}
+Received SCMP echo reply with unexpected seq 39, expected 41 or 40
+2025/08/09 11:00:15 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737215.5506556}
+2025/08/09 11:00:16 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737216.5505292}
+2025/08/09 11:00:17 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737217.5502906}
+2025/08/09 11:00:18 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737218.5505269}
+2025/08/09 11:00:19 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737219.550714}
+2025/08/09 11:00:20 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737220.549967}
+Received SCMP echo reply with unexpected seq 45, expected 47 or 46
+2025/08/09 11:00:21 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737221.5501056}
+2025/08/09 11:00:22 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737222.5501158}
+2025/08/09 11:00:23 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737223.5503645}
+2025/08/09 11:00:24 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737224.55057}
+2025/08/09 11:00:25 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737225.5502138}
+2025/08/09 11:00:26 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737226.5497847}
+2025/08/09 11:00:27 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737227.5506268}
+2025/08/09 11:00:28 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737228.5498335}
+2025/08/09 11:00:29 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737229.550241}
+2025/08/09 11:00:30 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737230.553252}
+2025/08/09 11:00:31 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737231.5504615}
+Received SCMP echo reply with unexpected seq 56, expected 58 or 57
+2025/08/09 11:00:32 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737232.5554848}
+Received SCMP echo reply with unexpected seq 57, expected 59 or 58
+2025/08/09 11:00:33 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737233.5507758}
+Received SCMP echo reply with unexpected seq 58, expected 60 or 59
+2025/08/09 11:00:34 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737234.5507357}
+Received SCMP echo reply with unexpected seq 59, expected 61 or 60
+2025/08/09 11:00:35 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737235.5507615}
+Received SCMP echo reply with unexpected seq 60, expected 62 or 61
+2025/08/09 11:00:36 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737236.5501275}
+2025/08/09 11:00:37 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737237.5504572}
+2025/08/09 11:00:38 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737238.5512164}
+Received SCMP echo reply with unexpected seq 63, expected 65 or 64
+2025/08/09 11:00:39 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737239.555987}
+Received SCMP echo reply with unexpected seq 64, expected 66 or 65
+2025/08/09 11:00:40 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737240.5515049}
+Received SCMP echo reply with unexpected seq 65, expected 67 or 66
+Received SCMP echo reply with unexpected seq 65, expected 67 or 66
+2025/08/09 11:00:41 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737241.5505083}
+Received SCMP echo reply with unexpected seq 66, expected 68 or 67
+Received SCMP echo reply with unexpected seq 66, expected 68 or 67
+2025/08/09 11:00:42 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737242.5498483}
+Received SCMP echo reply with unexpected seq 67, expected 69 or 68
+Received SCMP echo reply with unexpected seq 67, expected 69 or 68
+2025/08/09 11:00:43 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737243.550894}
+Received SCMP echo reply with unexpected seq 68, expected 70 or 69
+Received SCMP echo reply with unexpected seq 68, expected 70 or 69
+Received SCMP echo reply with unexpected seq 68, expected 70 or 69
+Received SCMP echo reply with unexpected seq 68, expected 70 or 69
+Received SCMP echo reply with unexpected seq 68, expected 70 or 69
+2025/08/09 11:00:44 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737244.5509515}
+2025/08/09 11:00:45 POLARIS_LOG {"event":"send_rate","rate":288000,"ts":1754737245.5505328}
+2025/08/09 11:00:46 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737246.5506048}
+2025/08/09 11:00:47 POLARIS_LOG {"event":"send_rate","rate":80000,"ts":1754737247.5504627}
+2025/08/09 11:00:48 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737248.5503023}
+Received SCMP echo reply with unexpected seq 73, expected 75 or 74
+2025/08/09 11:00:49 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737249.5504594}
+Received SCMP echo reply with unexpected seq 74, expected 76 or 75
+2025/08/09 11:00:50 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737250.5528843}
+Received SCMP echo reply with unexpected seq 75, expected 77 or 76
+2025/08/09 11:00:51 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737251.5500858}
+2025/08/09 11:00:52 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737252.549982}
+2025/08/09 11:00:53 POLARIS_LOG {"candidates":20,"current_rate":88000,"estimated_share":225000,"event":"path_switch","new":"3 3 5 2","old":"3 3 7 7 1 3","trigger":"scheduled","ts":1754737253.5505388}
+2025/08/09 11:00:53 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737253.551169}
+2025/08/09 11:00:54 POLARIS_LOG {"event":"send_rate","rate":96000,"ts":1754737254.5596025}
+2025/08/09 11:00:55 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737255.5529976}
+2025/08/09 11:00:56 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737256.5502279}
+2025/08/09 11:00:57 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737257.550472}
+2025/08/09 11:00:58 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737258.5502331}
+2025/08/09 11:00:59 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737259.5591228}
+2025/08/09 11:01:00 POLARIS_LOG {"event":"send_rate","rate":104000,"ts":1754737260.5503967}
+2025/08/09 11:01:01 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737261.5498056}
+2025/08/09 11:01:02 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737262.5500631}
+2025/08/09 11:01:03 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737263.5505059}
+2025/08/09 11:01:04 POLARIS_LOG {"event":"send_rate","rate":64000,"ts":1754737264.5505388}
+2025/08/09 11:01:05 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737265.5503125}
+2025/08/09 11:01:06 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737266.550465}
+2025/08/09 11:01:07 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737267.5597415}
+2025/08/09 11:01:08 POLARIS_LOG {"event":"send_rate","rate":72000,"ts":1754737268.5507786}
+2025/08/09 11:01:09 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737269.55166}
+2025/08/09 11:01:10 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737270.5507789}
+2025/08/09 11:01:11 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737271.550653}
+2025/08/09 11:01:12 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737272.5566294}
+2025/08/09 11:01:13 POLARIS_LOG {"candidates":20,"current_rate":56000,"estimated_share":257250,"event":"path_switch","new":"1 1 7 7 1 3","old":"3 3 5 2","trigger":"scheduled","ts":1754737273.551034}
+2025/08/09 11:01:13 POLARIS_LOG {"event":"send_rate","rate":32000,"ts":1754737273.5515118}
+2025/08/09 11:01:14 POLARIS_LOG {"event":"send_rate","rate":64000,"ts":1754737274.550206}
+2025/08/09 11:01:15 POLARIS_LOG {"event":"send_rate","rate":40000,"ts":1754737275.5515494}
+Received SCMP echo reply with unexpected seq 100, expected 102 or 101
+2025/08/09 11:01:16 POLARIS_LOG {"event":"send_rate","rate":16000,"ts":1754737276.5580041}
+2025/08/09 11:01:17 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737277.5507905}
+2025/08/09 11:01:18 POLARIS_LOG {"event":"send_rate","rate":80000,"ts":1754737278.5503368}
+2025/08/09 11:01:19 POLARIS_LOG {"event":"send_rate","rate":16000,"ts":1754737279.550058}
+2025/08/09 11:01:20 POLARIS_LOG {"event":"send_rate","rate":72000,"ts":1754737280.5504324}
+2025/08/09 11:01:21 POLARIS_LOG {"event":"send_rate","rate":96000,"ts":1754737281.550737}
+2025/08/09 11:01:22 POLARIS_LOG {"event":"send_rate","rate":24000,"ts":1754737282.5507069}
+2025/08/09 11:01:23 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737283.550911}
+2025/08/09 11:01:24 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737284.5503235}
+2025/08/09 11:01:25 POLARIS_LOG {"event":"send_rate","rate":32000,"ts":1754737285.5507116}
+2025/08/09 11:01:26 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737286.5517058}
+2025/08/09 11:01:27 POLARIS_LOG {"event":"send_rate","rate":24000,"ts":1754737287.550208}
+2025/08/09 11:01:28 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737288.549965}
+2025/08/09 11:01:29 POLARIS_LOG {"event":"send_rate","rate":16000,"ts":1754737289.550493}
+2025/08/09 11:01:30 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737290.550783}
+Received SCMP echo reply with unexpected seq 115, expected 117 or 116
+2025/08/09 11:01:31 POLARIS_LOG {"event":"send_rate","rate":24000,"ts":1754737291.550376}
+Received SCMP echo reply with unexpected seq 116, expected 118 or 117
+Received SCMP echo reply with unexpected seq 116, expected 118 or 117
+2025/08/09 11:01:32 POLARIS_LOG {"event":"send_rate","rate":56000,"ts":1754737292.557691}
+Received SCMP echo reply with unexpected seq 117, expected 119 or 118
+Received SCMP echo reply with unexpected seq 117, expected 119 or 118
+2025/08/09 11:01:33 POLARIS_LOG {"event":"send_rate","rate":16000,"ts":1754737293.5500772}
+2025/08/09 11:01:33 POLARIS_LOG {"candidates":19,"current_rate":16000,"estimated_share":300000,"event":"path_switch","new":"2 2 5 2","old":"1 1 7 7 1 3","trigger":"scheduled","ts":1754737293.551823}
+2025/08/09 11:01:34 POLARIS_LOG {"event":"send_rate","rate":104000,"ts":1754737294.5507965}
+2025/08/09 11:01:35 POLARIS_LOG {"event":"send_rate","rate":96000,"ts":1754737295.5560412}
+2025/08/09 11:01:36 POLARIS_LOG {"event":"send_rate","rate":80000,"ts":1754737296.5501366}
+2025/08/09 11:01:37 POLARIS_LOG {"event":"send_rate","rate":64000,"ts":1754737297.5516791}
+2025/08/09 11:01:38 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737298.5506504}
+2025/08/09 11:01:39 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737299.5510218}
+2025/08/09 11:01:40 POLARIS_LOG {"event":"send_rate","rate":96000,"ts":1754737300.5505643}
+2025/08/09 11:01:41 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737301.553149}
+2025/08/09 11:01:42 POLARIS_LOG {"event":"send_rate","rate":72000,"ts":1754737302.5504267}
+Received SCMP echo reply with unexpected seq 127, expected 129 or 128
+Received SCMP echo reply with unexpected seq 127, expected 129 or 128
+2025/08/09 11:01:43 POLARIS_LOG {"event":"send_rate","rate":88000,"ts":1754737303.5500917}
+Received SCMP echo reply with unexpected seq 128, expected 130 or 129
+Received SCMP echo reply with unexpected seq 128, expected 130 or 129
+2025/08/09 11:01:44 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737304.5506465}
+2025/08/09 11:01:45 POLARIS_LOG {"event":"send_rate","rate":136000,"ts":1754737305.5505052}
+2025/08/09 11:01:46 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737306.5504875}
+2025/08/09 11:01:47 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737307.563722}
+2025/08/09 11:01:48 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737308.5503662}
+2025/08/09 11:01:49 POLARIS_LOG {"event":"send_rate","rate":288000,"ts":1754737309.550058}
+2025/08/09 11:01:50 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737310.5529046}
+2025/08/09 11:01:51 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737311.5607}
+2025/08/09 11:01:52 POLARIS_LOG {"event":"send_rate","rate":176000,"ts":1754737312.5507536}
+2025/08/09 11:01:53 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737313.5502305}
+2025/08/09 11:01:54 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737314.5502672}
+2025/08/09 11:01:55 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737315.5636368}
+2025/08/09 11:01:56 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737316.549856}
+Received SCMP echo reply with unexpected seq 141, expected 143 or 142
+Received SCMP echo reply with unexpected seq 141, expected 143 or 142
+Received SCMP echo reply with unexpected seq 141, expected 143 or 142
+Received SCMP echo reply with unexpected seq 141, expected 143 or 142
+2025/08/09 11:01:57 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737317.5503454}
+Received SCMP echo reply with unexpected seq 142, expected 144 or 143
+2025/08/09 11:01:58 POLARIS_LOG {"event":"send_rate","rate":176000,"ts":1754737318.5569055}
+Received SCMP echo reply with unexpected seq 143, expected 145 or 144
+2025/08/09 11:01:59 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737319.5507054}
+2025/08/09 11:02:00 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737320.550116}
+2025/08/09 11:02:01 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737321.550614}
+2025/08/09 11:02:02 POLARIS_LOG {"event":"send_rate","rate":264000,"ts":1754737322.550356}
+2025/08/09 11:02:03 POLARIS_LOG {"event":"send_rate","rate":376000,"ts":1754737323.5546942}
+2025/08/09 11:02:04 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737324.5502832}
+2025/08/09 11:02:05 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737325.54998}
+2025/08/09 11:02:06 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737326.5499427}
+2025/08/09 11:02:07 POLARIS_LOG {"event":"send_rate","rate":272000,"ts":1754737327.5503716}
+2025/08/09 11:02:08 POLARIS_LOG {"event":"send_rate","rate":120000,"ts":1754737328.5507493}
+2025/08/09 11:02:09 POLARIS_LOG {"event":"send_rate","rate":120000,"ts":1754737329.5503485}
+2025/08/09 11:02:10 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737330.5499153}
+Received SCMP echo reply with unexpected seq 155, expected 157 or 156
+2025/08/09 11:02:11 POLARIS_LOG {"event":"send_rate","rate":136000,"ts":1754737331.5506203}
+2025/08/09 11:02:12 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737332.549775}
+2025/08/09 11:02:13 POLARIS_LOG {"event":"send_rate","rate":264000,"ts":1754737333.5508378}
+2025/08/09 11:02:14 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737334.550387}
+2025/08/09 11:02:15 POLARIS_LOG {"event":"send_rate","rate":248000,"ts":1754737335.549956}
+2025/08/09 11:02:16 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737336.5500407}
+2025/08/09 11:02:17 POLARIS_LOG {"event":"send_rate","rate":224000,"ts":1754737337.549819}
+2025/08/09 11:02:18 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737338.5635407}
+2025/08/09 11:02:19 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737339.5501394}
+2025/08/09 11:02:20 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737340.5498407}
+2025/08/09 11:02:21 POLARIS_LOG {"event":"send_rate","rate":176000,"ts":1754737341.5504398}
+2025/08/09 11:02:22 POLARIS_LOG {"event":"send_rate","rate":136000,"ts":1754737342.550722}
+2025/08/09 11:02:23 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737343.550076}
+2025/08/09 11:02:24 POLARIS_LOG {"event":"send_rate","rate":120000,"ts":1754737344.5497727}
+2025/08/09 11:02:25 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737345.5519931}
+2025/08/09 11:02:26 POLARIS_LOG {"event":"send_rate","rate":224000,"ts":1754737346.5498538}
+2025/08/09 11:02:27 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737347.5500526}
+2025/08/09 11:02:28 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737348.5505705}
+2025/08/09 11:02:29 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737349.5503235}
+2025/08/09 11:02:30 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737350.5508018}
+2025/08/09 11:02:31 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737351.550748}
+2025/08/09 11:02:32 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737352.5511868}
+2025/08/09 11:02:33 POLARIS_LOG {"event":"send_rate","rate":248000,"ts":1754737353.5523562}
+2025/08/09 11:02:34 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737354.5506194}
+2025/08/09 11:02:35 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1754737355.5512104}
+2025/08/09 11:02:36 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737356.551205}
+2025/08/09 11:02:37 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737357.549835}
+2025/08/09 11:02:38 POLARIS_LOG {"event":"send_rate","rate":104000,"ts":1754737358.5503066}
+2025/08/09 11:02:39 POLARIS_LOG {"event":"send_rate","rate":104000,"ts":1754737359.550519}
+2025/08/09 11:02:40 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737360.550292}
+2025/08/09 11:02:41 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737361.5505152}
+2025/08/09 11:02:42 POLARIS_LOG {"event":"send_rate","rate":248000,"ts":1754737362.5507157}
+2025/08/09 11:02:43 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737363.550661}
+2025/08/09 11:02:44 POLARIS_LOG {"event":"send_rate","rate":288000,"ts":1754737364.5501187}
+2025/08/09 11:02:45 POLARIS_LOG {"event":"send_rate","rate":280000,"ts":1754737365.550187}
+2025/08/09 11:02:46 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737366.5507414}
+2025/08/09 11:02:47 POLARIS_LOG {"event":"send_rate","rate":224000,"ts":1754737367.5503602}
+2025/08/09 11:02:48 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737368.550737}
+2025/08/09 11:02:49 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737369.5509448}
+2025/08/09 11:02:50 POLARIS_LOG {"event":"send_rate","rate":136000,"ts":1754737370.5510657}
+2025/08/09 11:02:51 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737371.5507848}
+2025/08/09 11:02:52 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737372.5507247}
+2025/08/09 11:02:53 POLARIS_LOG {"event":"send_rate","rate":120000,"ts":1754737373.5510502}
+2025/08/09 11:02:54 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737374.5503037}
+2025/08/09 11:02:55 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737375.555683}
+2025/08/09 11:02:56 POLARIS_LOG {"event":"send_rate","rate":192000,"ts":1754737376.5580525}
+2025/08/09 11:02:57 POLARIS_LOG {"event":"send_rate","rate":272000,"ts":1754737377.5501113}
+2025/08/09 11:02:58 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737378.5499184}
+2025/08/09 11:02:59 POLARIS_LOG {"event":"send_rate","rate":192000,"ts":1754737379.5504768}
+2025/08/09 11:03:00 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737380.5505369}
+2025/08/09 11:03:01 POLARIS_LOG {"event":"send_rate","rate":104000,"ts":1754737381.5546494}
+2025/08/09 11:03:02 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737382.5505624}
+2025/08/09 11:03:03 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737383.5499816}
+2025/08/09 11:03:04 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737384.5508287}
+2025/08/09 11:03:05 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737385.5498345}
+2025/08/09 11:03:06 POLARIS_LOG {"event":"send_rate","rate":48000,"ts":1754737386.550139}
+2025/08/09 11:03:07 POLARIS_LOG {"event":"send_rate","rate":136000,"ts":1754737387.5506785}
+2025/08/09 11:03:08 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737388.5501616}
+2025/08/09 11:03:09 POLARIS_LOG {"event":"send_rate","rate":280000,"ts":1754737389.5530272}
+2025/08/09 11:03:10 POLARIS_LOG {"event":"send_rate","rate":224000,"ts":1754737390.5507379}
+2025/08/09 11:03:11 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737391.5529056}
+2025/08/09 11:03:12 POLARIS_LOG {"event":"send_rate","rate":248000,"ts":1754737392.5535238}
+2025/08/09 11:03:13 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737393.5555255}
+2025/08/09 11:03:14 POLARIS_LOG {"event":"send_rate","rate":416000,"ts":1754737394.5518613}
+2025/08/09 11:03:15 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1754737395.5497878}
+2025/08/09 11:03:16 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737396.550974}
+2025/08/09 11:03:17 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737397.550998}
+2025/08/09 11:03:18 POLARIS_LOG {"event":"send_rate","rate":336000,"ts":1754737398.549967}
+2025/08/09 11:03:19 POLARIS_LOG {"event":"send_rate","rate":192000,"ts":1754737399.5498672}
+2025/08/09 11:03:20 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737400.5504308}
+2025/08/09 11:03:21 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737401.5505729}
+2025/08/09 11:03:22 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737402.5525346}
+2025/08/09 11:03:23 POLARIS_LOG {"event":"send_rate","rate":192000,"ts":1754737403.5506718}
+2025/08/09 11:03:24 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737404.5506668}
+2025/08/09 11:03:25 POLARIS_LOG {"event":"send_rate","rate":192000,"ts":1754737405.5505254}
+2025/08/09 11:03:26 POLARIS_LOG {"event":"send_rate","rate":320000,"ts":1754737406.5504398}
+2025/08/09 11:03:27 POLARIS_LOG {"event":"send_rate","rate":312000,"ts":1754737407.5514767}
+2025/08/09 11:03:28 POLARIS_LOG {"event":"send_rate","rate":432000,"ts":1754737408.5500023}
+2025/08/09 11:03:29 POLARIS_LOG {"event":"send_rate","rate":344000,"ts":1754737409.5517492}
+2025/08/09 11:03:30 POLARIS_LOG {"event":"send_rate","rate":368000,"ts":1754737410.5499396}
+2025/08/09 11:03:31 POLARIS_LOG {"event":"send_rate","rate":288000,"ts":1754737411.553488}
+2025/08/09 11:03:32 POLARIS_LOG {"event":"send_rate","rate":328000,"ts":1754737412.5523918}
+2025/08/09 11:03:33 POLARIS_LOG {"event":"send_rate","rate":328000,"ts":1754737413.5506682}
+2025/08/09 11:03:34 POLARIS_LOG {"event":"send_rate","rate":312000,"ts":1754737414.5569508}
+2025/08/09 11:03:35 POLARIS_LOG {"event":"send_rate","rate":264000,"ts":1754737415.5530775}
+2025/08/09 11:03:36 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1754737416.5498426}
+2025/08/09 11:03:37 POLARIS_LOG {"event":"send_rate","rate":280000,"ts":1754737417.5502615}
+2025/08/09 11:03:38 POLARIS_LOG {"event":"send_rate","rate":336000,"ts":1754737418.5507812}
+2025/08/09 11:03:39 POLARIS_LOG {"event":"send_rate","rate":328000,"ts":1754737419.5504787}
+2025/08/09 11:03:40 POLARIS_LOG {"event":"send_rate","rate":456000,"ts":1754737420.5503457}
+2025/08/09 11:03:41 POLARIS_LOG {"event":"send_rate","rate":400000,"ts":1754737421.5501118}
+2025/08/09 11:03:42 POLARIS_LOG {"event":"send_rate","rate":512000,"ts":1754737422.549947}
+2025/08/09 11:03:43 POLARIS_LOG {"event":"send_rate","rate":616000,"ts":1754737423.5502234}
+2025/08/09 11:03:44 POLARIS_LOG {"event":"send_rate","rate":416000,"ts":1754737424.5510876}
+2025/08/09 11:03:45 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737425.5502365}
+2025/08/09 11:03:46 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737426.5500832}
+2025/08/09 11:03:47 POLARIS_LOG {"event":"send_rate","rate":176000,"ts":1754737427.5508077}
+2025/08/09 11:03:48 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737428.5512106}
+2025/08/09 11:03:49 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737429.563835}
+2025/08/09 11:03:50 POLARIS_LOG {"event":"send_rate","rate":96000,"ts":1754737430.550426}
+2025/08/09 11:03:51 POLARIS_LOG {"event":"send_rate","rate":112000,"ts":1754737431.5500317}
+2025/08/09 11:03:52 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737432.5511463}
+2025/08/09 11:03:53 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737433.55071}
+2025/08/09 11:03:54 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737434.5500813}
+2025/08/09 11:03:55 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1754737435.5507984}
+2025/08/09 11:03:56 POLARIS_LOG {"event":"send_rate","rate":216000,"ts":1754737436.5506005}
+2025/08/09 11:03:57 POLARIS_LOG {"event":"send_rate","rate":400000,"ts":1754737437.5508032}
+2025/08/09 11:03:58 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1754737438.5505702}
+2025/08/09 11:03:59 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737439.5500484}
+2025/08/09 11:04:00 POLARIS_LOG {"event":"send_rate","rate":160000,"ts":1754737440.553279}
+2025/08/09 11:04:01 POLARIS_LOG {"event":"send_rate","rate":224000,"ts":1754737441.5500472}
+2025/08/09 11:04:02 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737442.5501463}
+2025/08/09 11:04:03 POLARIS_LOG {"event":"send_rate","rate":120000,"ts":1754737443.5516317}
+2025/08/09 11:04:04 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737444.550254}
+2025/08/09 11:04:05 POLARIS_LOG {"event":"send_rate","rate":152000,"ts":1754737445.5508158}
+2025/08/09 11:04:06 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737446.5500658}
+2025/08/09 11:04:07 POLARIS_LOG {"event":"send_rate","rate":288000,"ts":1754737447.5579073}
+2025/08/09 11:04:08 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1754737448.5498955}
+2025/08/09 11:04:09 POLARIS_LOG {"event":"send_rate","rate":424000,"ts":1754737449.5507987}
+2025/08/09 11:04:10 POLARIS_LOG {"event":"send_rate","rate":344000,"ts":1754737450.5505576}
+2025/08/09 11:04:11 POLARIS_LOG {"event":"send_rate","rate":360000,"ts":1754737451.563547}
+2025/08/09 11:04:12 POLARIS_LOG {"event":"send_rate","rate":232000,"ts":1754737452.550719}
+2025/08/09 11:04:13 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1754737453.55081}
+2025/08/09 11:04:14 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737454.5507798}
+2025/08/09 11:04:15 POLARIS_LOG {"event":"send_rate","rate":168000,"ts":1754737455.5509787}
+2025/08/09 11:04:16 POLARIS_LOG {"event":"send_rate","rate":128000,"ts":1754737456.5503216}
+2025/08/09 11:04:17 POLARIS_LOG {"event":"send_rate","rate":144000,"ts":1754737457.5499682}
+2025/08/09 11:04:18 POLARIS_LOG {"event":"send_rate","rate":200000,"ts":1754737458.5511625}
+2025/08/09 11:04:19 POLARIS_LOG {"event":"send_rate","rate":240000,"ts":1754737459.5504954}
+2025/08/09 11:04:20 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737460.5501847}
+2025/08/09 11:04:21 POLARIS_LOG {"event":"send_rate","rate":184000,"ts":1754737461.553404}
+2025/08/09 11:04:22 POLARIS_LOG {"event":"send_rate","rate":208000,"ts":1754737462.5511014}
+Drain Loop received packet
+Drain Loop received non-nil payload
+
+S->C results
+Attempted bandwidth: 300000 bps / 0.30 Mbps
+Achieved bandwidth: 195805 bps / 0.20 Mbps
+Loss rate: 34.7%
+Interarrival time min/avg/max/mdev = 0.002/40.720/845.511/28.369 ms
+
+C->S results
+Attempted bandwidth: 300000 bps / 0.30 Mbps
+Achieved bandwidth: 208027 bps / 0.21 Mbps
+Loss rate: 30.7%
+Interarrival time min/avg/max/mdev = 0.002/38.111/1100.781/32.599 ms

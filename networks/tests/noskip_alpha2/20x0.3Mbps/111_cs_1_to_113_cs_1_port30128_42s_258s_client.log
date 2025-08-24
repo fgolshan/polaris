@@ -1,0 +1,20 @@
+Only cs parameter set, using same values for sc
+
+Test parameters:
+client->server: 258 seconds, 1000 bytes, 9675 packets
+server->client: 258 seconds, 1000 bytes, 9675 packets
+2025/08/10 18:21:55 POLARIS_LOG {"current_rate":0,"event":"path_switch","new":"2 2 5 2","trigger":"initialization","ts":1754850115.0446904}
+Polaris prober initialized with local 1-111,10.111.0.71:32722 and remote 1-113,10.113.0.71
+Received SCMP echo reply with unexpected seq 1, expected 3 or 2
+Received SCMP echo reply with unexpected seq 1, expected 3 or 2
+Received SCMP echo reply with unexpected seq 1, expected 3 or 2
+Received SCMP echo reply with unexpected seq 1, expected 3 or 2
+2025/08/10 18:22:05 POLARIS_LOG {"event":"send_rate","rate":0,"ts":1754850125.04722}
+2025/08/10 18:22:05 POLARIS_LOG {"candidates":20,"current_rate":0,"estimated_share":180000,"event":"path_switch","new":"4 4 7 7 5 2","old":"2 2 5 2","trigger":"scheduled","ts":1754850125.0472589}
+2025/08/10 18:22:06 POLARIS_LOG {"event":"send_rate","rate":0,"ts":1754850126.047692}
+2025/08/10 18:22:07 POLARIS_LOG {"event":"send_rate","rate":0,"ts":1754850127.0460804}
+2025/08/10 18:22:08 POLARIS_LOG {"event":"send_rate","rate":0,"ts":1754850128.0461993}
+2025/08/10 18:22:09 POLARIS_LOG {"event":"send_rate","rate":0,"ts":1754850129.0483217}
+Drain Loop received packet
+Drain Loop received non-nil payload
+Fatal: could not receive a server response, MaxTries attempted without success
