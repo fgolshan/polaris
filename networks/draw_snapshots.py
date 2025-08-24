@@ -29,7 +29,7 @@ def run_once(base: Path, param_script: str) -> int:
         sys.executable, str(param_script), str(base),
         "--mode", "switches",
         "--outdir", str(outdir),
-        "--label-curve-scale", "3",
+        "--label-curve-scale", "1.8",
     ]
     print(">>", " ".join(map(str, cmd)), flush=True)
     proc = subprocess.run(cmd)

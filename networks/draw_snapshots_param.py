@@ -407,14 +407,70 @@ def _sample_points_and_angles_scaled_arc_display(patch, rad_base, edge_scale, la
 
 # ---------- drawing primitives ----------
 def base_graph(G, pos, links, rad_by_idx, edge_style, ax, edge_curve_scale=1.0):
+    """
+    Draw the base topology edges and return geometry information for each link.
+
+    When multiple parallel links exist between the same pair of ASes, a
+    standard ``Graph`` collapses them into a single edge.  Drawing that edge
+    repeatedly with different curvature values can result in unpredictable
+    associations between the link indices in ``links`` and the matplotlib
+    artists returned by NetworkX.  To avoid this problem, we use an internal
+    ``MultiGraph``: each link is added as a distinct edge with a unique
+    key equal to its index.  We then draw exactly one edge at a time by
+    specifying its key, which ensures a one-to-one mapping between each link
+    and its drawn curve.
+
+    Parameters
+    ----------
+    G : networkx.Graph
+        A graph containing all AS nodes.  Only nodes are drawn from this
+        graph; edges are handled via an internal ``MultiGraph``.
+    pos : dict
+        Mapping of AS identifiers to 2D positions in data coordinates.
+    links : list
+        A list of link dictionaries produced by ``match_links()``.  Each entry
+        has ``a_ia`` and ``b_ia`` keys indicating the two ASes, and an entry
+        in ``rad_by_idx``.
+    rad_by_idx : dict
+        Mapping from link index to its base curvature (radius) value.  A
+        positive value bends the arc in one direction, negative in the other.
+    edge_style : dict
+        A dictionary of matplotlib kwargs controlling edge appearance.
+    ax : matplotlib.axes.Axes
+        The axes on which to draw.
+    edge_curve_scale : float
+        Scaling factor applied to the base curvature values when drawing.
+
+    Returns
+    -------
+    geom : dict
+        For each link index, a dictionary with keys ``patch`` (the drawn
+        ``FancyArrowPatch`` or ``LineCollection``), ``rad_base`` (original
+        curvature) and ``rad_drawn`` (curvature after applying
+        ``edge_curve_scale``).
+    """
+    # Build a MultiGraph so each link can be drawn individually using its
+    # unique key.  When drawing parallel edges on a simple Graph, NetworkX
+    # collapses them into a single edge, which causes ambiguity.  A
+    # MultiGraph preserves the multiplicity and allows us to specify which
+    # edge to draw by key.
+    MG = nx.MultiGraph()
+    MG.add_nodes_from(G.nodes())
+    for idx, L in enumerate(links):
+        MG.add_edge(L["a_ia"], L["b_ia"], key=idx)
+
     geom = {}
     for idx, L in enumerate(links):
         u, v = L["a_ia"], L["b_ia"]
         rad_base = rad_by_idx[idx]
-        rad_drawn = rad_base * edge_curve_scale
+        # Invert curvature when drawing on the MultiGraph to match the
+        # original orientation of arcs when using a simple Graph.  Without
+        # this flip, the flows appear mirrored between outer edges in
+        # two- and three-edge AS pairs.  Zero curvature remains unchanged.
+        rad_drawn = -rad_base * edge_curve_scale
         try:
             artists = nx.draw_networkx_edges(
-                G, pos, edgelist=[(u, v)],
+                MG, pos, edgelist=[(u, v, idx)],
                 connectionstyle=f"arc3,rad={rad_drawn}",
                 ax=ax, **edge_style
             )
@@ -423,7 +479,7 @@ def base_graph(G, pos, links, rad_by_idx, edge_style, ax, edge_curve_scale=1.0):
             _kw.pop("min_source_margin", None)
             _kw.pop("min_target_margin", None)
             artists = nx.draw_networkx_edges(
-                G, pos, edgelist=[(u, v)],
+                MG, pos, edgelist=[(u, v, idx)],
                 connectionstyle=f"arc3,rad={rad_drawn}",
                 ax=ax, **_kw
             )
