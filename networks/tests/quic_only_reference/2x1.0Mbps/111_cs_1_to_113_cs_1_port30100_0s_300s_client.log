@@ -1,0 +1,18 @@
+
+Test parameters:
+client->server: 300 seconds, 1000 bytes, 37500 packets
+server->client: 300 seconds, 1000 bytes, 0 packets
+Client sent 31978 packets, server reported 31784 packets received
+The network loss rate from client to server is 0.6%
+
+S->C results
+Attempted bandwidth: 0 bps / 0.00 Mbps
+Achieved bandwidth: 0 bps / 0.00 Mbps
+Loss rate: 0.0%
+Interarrival time min/avg/max/mdev = -0.000/0.000/0.000/0.000 ms
+
+C->S results
+Attempted bandwidth: 1000000 bps / 1.00 Mbps
+Achieved bandwidth: 847573 bps / 0.85 Mbps
+Loss rate: 15.2%
+Interarrival time min/avg/max/mdev = 0.003/9.452/200.591/13.825 ms
