@@ -671,7 +671,8 @@ def render_snapshot(links, topologies, pos, geom, rad_by_idx,
     if show_legend and flow_to_pair and pair_to_color:
         pairs_present = list({flow_to_pair[fl] for fls in flows_on_edges.values() for (fl, _) in fls})
         pairs_all = list(pair_to_color.keys())
-        pairs = pairs_present if pairs_present else pairs_all
+        # pairs = pairs_present if pairs_present else pairs_all
+        pairs = list(pair_to_color.keys())
         # Stable ordering
         pairs = sorted(pairs, key=lambda p: (as_num_for_label(p[0]), as_num_for_label(p[1])))
 
