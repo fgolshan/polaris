@@ -24,6 +24,8 @@ def main():
     parser.add_argument("out_dir", help="Directory where all outputs will be written")
     parser.add_argument("--capacity", type=float,
                         help="Optional link capacity in Mbps for normalization and summaries")
+    parser.add_argument("--tcspec", dest="tc_spec", default=None,
+                        help="Optional JSON file describing tc events to execute during the experiment")
     args = parser.parse_args()
 
     spec = Path(args.spec_file)
@@ -31,10 +33,13 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
 
     # 1) Traffic generation
-    run_cmd([sys.executable, "traffic_generator_v2.py", str(spec), str(out)])
+    if args.tc_spec is not None:
+        run_cmd([sys.executable, "traffic_generator_v3.py", str(spec), str(out), "--tcspec", args.tc_spec])
+    else:
+        run_cmd([sys.executable, "traffic_generator_v2.py", str(spec), str(out)])
 
     # 2) Plot path switches
-    run_cmd([sys.executable, "plot_path_switches.py", "--base", str(out)])
+    run_cmd([sys.executable, "plot_path_switches_grouped.py", "--base", str(out)])
 
     # 3) Aggregation
     run_cmd([sys.executable, "aggregator.py", str(out)])
