@@ -1,0 +1,463 @@
+
+Test parameters:
+client->server: 300 seconds, 1000 bytes, 11250 packets
+server->client: 300 seconds, 1000 bytes, 0 packets
+2025/09/22 08:28:47 POLARIS_LOG {"current_rate":0,"event":"path_switch","new":"2 2 5 2","trigger":"initialization","ts":1758529727.9444346}
+Polaris prober initialized with 38 paths
+Polaris prober initialized with local 1-111,10.111.0.71:32764 and remote 1-113,10.113.0.71
+2025/09/22 08:28:48 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529728.945971}
+2025/09/22 08:28:49 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529729.9452918}
+2025/09/22 08:28:50 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529730.9455285}
+2025/09/22 08:28:51 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529731.9453664}
+2025/09/22 08:28:52 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529732.9460783}
+2025/09/22 08:28:53 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529733.945469}
+2025/09/22 08:28:54 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529734.945513}
+2025/09/22 08:28:55 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529735.9466875}
+2025/09/22 08:28:56 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529736.945413}
+2025/09/22 08:28:57 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529737.9468663}
+2025/09/22 08:28:58 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529738.9454212}
+2025/09/22 08:28:59 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529739.945957}
+2025/09/22 08:29:00 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529740.9458826}
+2025/09/22 08:29:01 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529741.9460378}
+2025/09/22 08:29:02 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529742.9457884}
+2025/09/22 08:29:03 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529743.9459202}
+2025/09/22 08:29:04 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529744.9453502}
+2025/09/22 08:29:05 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529745.9455047}
+2025/09/22 08:29:06 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529746.9460588}
+2025/09/22 08:29:07 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529747.9456754}
+2025/09/22 08:29:08 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529748.9454918}
+2025/09/22 08:29:09 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529749.945938}
+2025/09/22 08:29:10 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529750.9454284}
+2025/09/22 08:29:11 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529751.9452782}
+2025/09/22 08:29:12 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529752.9453728}
+2025/09/22 08:29:13 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529753.9475057}
+2025/09/22 08:29:14 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529754.9452434}
+2025/09/22 08:29:15 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529755.945494}
+2025/09/22 08:29:16 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529756.9525726}
+2025/09/22 08:29:17 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529757.9461238}
+2025/09/22 08:29:18 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529758.9455009}
+2025/09/22 08:29:19 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529759.9462316}
+2025/09/22 08:29:20 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529760.946277}
+2025/09/22 08:29:21 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529761.946086}
+2025/09/22 08:29:22 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529762.9455326}
+2025/09/22 08:29:23 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529763.9452763}
+2025/09/22 08:29:24 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529764.9456515}
+2025/09/22 08:29:25 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529765.9461634}
+2025/09/22 08:29:26 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529766.9518764}
+2025/09/22 08:29:27 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529767.945773}
+2025/09/22 08:29:28 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529768.9453814}
+2025/09/22 08:29:29 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529769.9491215}
+2025/09/22 08:29:30 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529770.9462733}
+2025/09/22 08:29:31 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529771.9461458}
+2025/09/22 08:29:32 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529772.9454558}
+2025/09/22 08:29:33 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529773.945867}
+2025/09/22 08:29:34 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529774.945934}
+2025/09/22 08:29:35 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529775.946974}
+2025/09/22 08:29:36 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529776.9457898}
+2025/09/22 08:29:37 POLARIS_LOG {"event":"send_rate","rate":256000,"ts":1758529777.9461267}
+2025/09/22 08:29:37 POLARIS_LOG {"candidates":17,"candidates_unfiltered":17,"current_rate":256000,"estimated_share":2000000,"event":"path_switch","max_estimated_share":2000000,"new":"5 5 3 5","old":"2 2 5 2","trigger":"scheduled","ts":1758529777.946179}
+2025/09/22 08:29:38 POLARIS_LOG {"event":"send_rate","rate":344000,"ts":1758529778.9472141}
+Received SCMP echo reply with unexpected seq 49, expected 51 or 50
+Received SCMP echo reply with unexpected seq 49, expected 51 or 50
+Received SCMP echo reply with unexpected seq 49, expected 51 or 50
+2025/09/22 08:29:39 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529779.946136}
+Received SCMP echo reply with unexpected seq 50, expected 52 or 51
+Received SCMP echo reply with unexpected seq 50, expected 52 or 51
+Received SCMP echo reply with unexpected seq 50, expected 52 or 51
+2025/09/22 08:29:40 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529780.947697}
+Received SCMP echo reply with unexpected seq 51, expected 53 or 52
+Received SCMP echo reply with unexpected seq 51, expected 53 or 52
+Received SCMP echo reply with unexpected seq 51, expected 53 or 52
+2025/09/22 08:29:41 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529781.9462214}
+Received SCMP echo reply with unexpected seq 52, expected 54 or 53
+Received SCMP echo reply with unexpected seq 52, expected 54 or 53
+Received SCMP echo reply with unexpected seq 52, expected 54 or 53
+2025/09/22 08:29:42 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529782.94699}
+Received SCMP echo reply with unexpected seq 53, expected 55 or 54
+Received SCMP echo reply with unexpected seq 53, expected 55 or 54
+Received SCMP echo reply with unexpected seq 53, expected 55 or 54
+2025/09/22 08:29:43 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529783.9460704}
+2025/09/22 08:29:44 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529784.9486852}
+2025/09/22 08:29:45 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529785.9454186}
+2025/09/22 08:29:46 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529786.946221}
+2025/09/22 08:29:47 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529787.9463177}
+2025/09/22 08:29:48 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529788.9451983}
+2025/09/22 08:29:49 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529789.945585}
+2025/09/22 08:29:50 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529790.9453554}
+2025/09/22 08:29:51 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529791.945693}
+2025/09/22 08:29:52 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529792.9455657}
+2025/09/22 08:29:53 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529793.9458368}
+2025/09/22 08:29:54 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529794.9472086}
+2025/09/22 08:29:55 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529795.9460962}
+2025/09/22 08:29:56 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529796.9533346}
+2025/09/22 08:29:57 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529797.94569}
+2025/09/22 08:29:58 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529798.9461353}
+2025/09/22 08:29:59 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529799.9655414}
+2025/09/22 08:30:00 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529800.9461842}
+2025/09/22 08:30:01 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529801.9457011}
+2025/09/22 08:30:02 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529802.9458566}
+2025/09/22 08:30:03 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529803.9459085}
+2025/09/22 08:30:04 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529804.9453723}
+2025/09/22 08:30:05 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529805.946473}
+2025/09/22 08:30:06 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529806.9496315}
+2025/09/22 08:30:07 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529807.9466884}
+2025/09/22 08:30:08 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529808.9461448}
+2025/09/22 08:30:09 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529809.9462197}
+2025/09/22 08:30:10 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529810.9460816}
+2025/09/22 08:30:11 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529811.9454074}
+2025/09/22 08:30:12 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529812.945928}
+2025/09/22 08:30:13 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529813.9461586}
+2025/09/22 08:30:14 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529814.946372}
+2025/09/22 08:30:15 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529815.945507}
+2025/09/22 08:30:16 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529816.9457874}
+2025/09/22 08:30:17 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529817.9565153}
+2025/09/22 08:30:18 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529818.946181}
+2025/09/22 08:30:19 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529819.9486167}
+2025/09/22 08:30:20 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529820.9455748}
+2025/09/22 08:30:21 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529821.945753}
+2025/09/22 08:30:22 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529822.9452214}
+2025/09/22 08:30:23 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529823.945709}
+2025/09/22 08:30:24 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529824.9460094}
+2025/09/22 08:30:25 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529825.945761}
+2025/09/22 08:30:26 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529826.9451993}
+2025/09/22 08:30:27 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529827.946025}
+2025/09/22 08:30:28 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529828.9457784}
+2025/09/22 08:30:29 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529829.9459174}
+2025/09/22 08:30:30 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529830.9460976}
+2025/09/22 08:30:31 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529831.9452474}
+2025/09/22 08:30:32 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529832.9453607}
+2025/09/22 08:30:33 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529833.9461186}
+2025/09/22 08:30:34 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529834.9456916}
+2025/09/22 08:30:35 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529835.9458284}
+2025/09/22 08:30:36 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529836.946556}
+2025/09/22 08:30:37 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529837.94648}
+2025/09/22 08:30:38 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529838.9590197}
+2025/09/22 08:30:39 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529839.9593036}
+2025/09/22 08:30:40 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529840.9485826}
+2025/09/22 08:30:41 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529841.9462466}
+2025/09/22 08:30:42 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529842.9461262}
+2025/09/22 08:30:43 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529843.9508367}
+2025/09/22 08:30:44 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529844.9458113}
+2025/09/22 08:30:45 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529845.9452846}
+2025/09/22 08:30:46 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529846.945725}
+2025/09/22 08:30:47 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529847.9458709}
+2025/09/22 08:30:48 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529848.9469068}
+2025/09/22 08:30:49 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529849.9665167}
+2025/09/22 08:30:50 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529850.9462388}
+2025/09/22 08:30:51 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529851.9461193}
+2025/09/22 08:30:52 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529852.9534192}
+2025/09/22 08:30:53 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529853.9605968}
+2025/09/22 08:30:54 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529854.9459193}
+2025/09/22 08:30:55 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529855.956453}
+2025/09/22 08:30:56 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529856.9458406}
+2025/09/22 08:30:57 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529857.9567401}
+2025/09/22 08:30:58 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529858.9463615}
+2025/09/22 08:30:59 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529859.9469037}
+2025/09/22 08:31:00 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529860.945869}
+2025/09/22 08:31:01 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529861.9462638}
+2025/09/22 08:31:02 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529862.9461257}
+2025/09/22 08:31:03 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529863.9458547}
+2025/09/22 08:31:04 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529864.9457364}
+2025/09/22 08:31:05 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529865.9460647}
+2025/09/22 08:31:06 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529866.9492862}
+2025/09/22 08:31:07 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529867.946628}
+2025/09/22 08:31:08 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529868.945811}
+2025/09/22 08:31:09 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529869.9456062}
+2025/09/22 08:31:10 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529870.9484646}
+2025/09/22 08:31:11 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529871.9455006}
+2025/09/22 08:31:12 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529872.9461143}
+2025/09/22 08:31:13 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529873.9477763}
+2025/09/22 08:31:14 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529874.946943}
+2025/09/22 08:31:15 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529875.9555757}
+2025/09/22 08:31:16 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529876.9532192}
+2025/09/22 08:31:17 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529877.9473467}
+2025/09/22 08:31:18 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529878.9456599}
+2025/09/22 08:31:20 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529879.9995449}
+2025/09/22 08:31:20 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529880.9462516}
+2025/09/22 08:31:21 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529881.945227}
+2025/09/22 08:31:22 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529882.9456496}
+2025/09/22 08:31:23 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529883.9454267}
+2025/09/22 08:31:24 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529884.9468627}
+2025/09/22 08:31:25 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529885.9526117}
+2025/09/22 08:31:26 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529886.94552}
+2025/09/22 08:31:27 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529887.9454658}
+2025/09/22 08:31:28 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529888.9460974}
+2025/09/22 08:31:29 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529889.9454992}
+2025/09/22 08:31:30 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529890.9466197}
+2025/09/22 08:31:31 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529891.9459515}
+2025/09/22 08:31:32 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529892.945634}
+2025/09/22 08:31:33 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529893.9454167}
+2025/09/22 08:31:34 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529894.947022}
+2025/09/22 08:31:35 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529895.946843}
+2025/09/22 08:31:36 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529896.945221}
+2025/09/22 08:31:37 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529897.9467154}
+2025/09/22 08:31:38 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529898.9464417}
+2025/09/22 08:31:39 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529899.9454553}
+2025/09/22 08:31:40 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529900.946053}
+2025/09/22 08:31:41 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529901.9629683}
+2025/09/22 08:31:42 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529902.9454021}
+2025/09/22 08:31:43 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529903.9457831}
+2025/09/22 08:31:44 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529904.9468014}
+2025/09/22 08:31:45 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529905.9452465}
+2025/09/22 08:31:46 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529906.9482906}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 179)
+2025/09/22 08:31:47 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529907.9454129}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 180)
+2025/09/22 08:31:48 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529908.9455936}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 181)
+2025/09/22 08:31:49 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529909.9461455}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 182)
+2025/09/22 08:31:50 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529910.9465654}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 183)
+2025/09/22 08:31:51 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529911.9454756}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 184)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 185)
+2025/09/22 08:31:52 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529912.9461918}
+2025/09/22 08:31:53 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529913.945384}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 186)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 187)
+2025/09/22 08:31:54 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529914.9455035}
+2025/09/22 08:31:55 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529915.9461136}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 188)
+2025/09/22 08:31:56 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529916.947139}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 189)
+2025/09/22 08:31:57 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529917.9452438}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 190)
+2025/09/22 08:31:58 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529918.9459171}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 191)
+2025/09/22 08:31:59 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529919.94579}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 192)
+2025/09/22 08:32:00 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529920.9466772}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 193)
+2025/09/22 08:32:01 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529921.9470513}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 194)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 195)
+2025/09/22 08:32:02 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529922.9458303}
+2025/09/22 08:32:03 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529923.9455163}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 196)
+2025/09/22 08:32:04 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529924.9461207}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 197)
+2025/09/22 08:32:05 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529925.945904}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 198)
+2025/09/22 08:32:06 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529926.9469156}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 199)
+2025/09/22 08:32:07 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529927.94846}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 200)
+2025/09/22 08:32:08 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529928.9459608}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 201)
+2025/09/22 08:32:09 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529929.9454248}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 202)
+2025/09/22 08:32:10 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529930.9461565}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 203)
+2025/09/22 08:32:11 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529931.9453545}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 204)
+2025/09/22 08:32:12 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529932.945377}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 205)
+2025/09/22 08:32:13 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529933.9456582}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 206)
+2025/09/22 08:32:14 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529934.9458237}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 207)
+2025/09/22 08:32:15 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529935.9461381}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 208)
+2025/09/22 08:32:16 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529936.9461703}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 209)
+2025/09/22 08:32:17 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529937.9471238}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 210)
+2025/09/22 08:32:18 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529938.9484699}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 211)
+2025/09/22 08:32:19 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529939.9457283}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 212)
+2025/09/22 08:32:20 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529940.9452388}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 213)
+2025/09/22 08:32:21 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529941.9459314}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 214)
+2025/09/22 08:32:22 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529942.9462044}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 215)
+2025/09/22 08:32:23 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529943.9488192}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 216)
+2025/09/22 08:32:24 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529944.9458396}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 217)
+2025/09/22 08:32:25 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529945.945485}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 218)
+2025/09/22 08:32:26 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529946.9460902}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 219)
+2025/09/22 08:32:27 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529947.9484599}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 220)
+2025/09/22 08:32:28 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529948.945428}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 221)
+2025/09/22 08:32:29 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529949.9493935}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 222)
+2025/09/22 08:32:30 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529950.94618}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 223)
+2025/09/22 08:32:31 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529951.945456}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 224)
+2025/09/22 08:32:32 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529952.9453173}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 225)
+2025/09/22 08:32:33 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529953.9456458}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 226)
+2025/09/22 08:32:34 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529954.9486654}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 227)
+2025/09/22 08:32:35 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529955.9456096}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 228)
+2025/09/22 08:32:36 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529956.9455576}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 229)
+2025/09/22 08:32:37 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529957.9456742}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 230)
+2025/09/22 08:32:38 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529958.9459822}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 231)
+2025/09/22 08:32:39 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529959.9462008}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 232)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 233)
+2025/09/22 08:32:40 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529960.9465327}
+2025/09/22 08:32:41 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529961.9452407}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 234)
+2025/09/22 08:32:42 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529962.9453511}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 235)
+2025/09/22 08:32:43 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529963.9452264}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 236)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 237)
+2025/09/22 08:32:44 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529964.951512}
+2025/09/22 08:32:45 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529965.9455009}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 238)
+2025/09/22 08:32:46 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529966.9454944}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 239)
+2025/09/22 08:32:47 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529967.9456804}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 240)
+2025/09/22 08:32:48 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529968.9465454}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 241)
+2025/09/22 08:32:49 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529969.9459448}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 242)
+2025/09/22 08:32:50 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529970.9459462}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 243)
+2025/09/22 08:32:51 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529971.9456491}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 244)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 245)
+2025/09/22 08:32:52 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529972.945989}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 246)
+2025/09/22 08:32:53 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529973.947395}
+2025/09/22 08:32:54 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529974.9456909}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 247)
+2025/09/22 08:32:55 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529975.9453883}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 248)
+2025/09/22 08:32:56 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529976.9456527}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 249)
+2025/09/22 08:32:57 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529977.9456632}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 250)
+2025/09/22 08:32:58 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529978.946228}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 251)
+2025/09/22 08:32:59 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529979.9453797}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 252)
+2025/09/22 08:33:00 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529980.9455671}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 253)
+2025/09/22 08:33:01 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529981.9452116}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 254)
+2025/09/22 08:33:02 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529982.9457598}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 255)
+2025/09/22 08:33:03 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529983.946508}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 256)
+2025/09/22 08:33:04 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529984.945428}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 257)
+2025/09/22 08:33:05 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529985.9453282}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 258)
+2025/09/22 08:33:06 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529986.9462304}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 259)
+2025/09/22 08:33:07 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529987.9454916}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 260)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 261)
+2025/09/22 08:33:08 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529988.9457955}
+2025/09/22 08:33:09 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529989.9459872}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 262)
+2025/09/22 08:33:10 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529990.9459555}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 263)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 264)
+2025/09/22 08:33:11 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529991.9458027}
+2025/09/22 08:33:12 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529992.945761}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 265)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 266)
+2025/09/22 08:33:13 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529993.9470658}
+2025/09/22 08:33:14 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529994.9456286}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 267)
+2025/09/22 08:33:15 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529995.9452405}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 268)
+2025/09/22 08:33:16 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529996.9459882}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 269)
+2025/09/22 08:33:17 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529997.947316}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 270)
+2025/09/22 08:33:18 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758529998.9461565}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 271)
+2025/09/22 08:33:19 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758529999.9461608}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 272)
+2025/09/22 08:33:20 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530000.945493}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 273)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 274)
+2025/09/22 08:33:21 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530001.946648}
+2025/09/22 08:33:22 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530002.9482713}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 275)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 276)
+2025/09/22 08:33:23 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530003.9566398}
+2025/09/22 08:33:24 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530004.9471}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 277)
+2025/09/22 08:33:25 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530005.9455056}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 278)
+2025/09/22 08:33:26 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530006.9457755}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 279)
+2025/09/22 08:33:27 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530007.9464784}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 280)
+2025/09/22 08:33:28 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530008.9463995}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 281)
+2025/09/22 08:33:29 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530009.9457228}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 282)
+2025/09/22 08:33:30 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530010.9463565}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 283)
+2025/09/22 08:33:31 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530011.9454958}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 284)
+2025/09/22 08:33:32 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530012.946513}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 285)
+2025/09/22 08:33:33 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530013.9458368}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 286)
+2025/09/22 08:33:34 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530014.9459643}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 287)
+2025/09/22 08:33:35 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530015.946391}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 288)
+2025/09/22 08:33:36 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530016.9460378}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 289)
+2025/09/22 08:33:37 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530017.9459844}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 290)
+2025/09/22 08:33:38 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530018.9591887}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 291)
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 292)
+2025/09/22 08:33:39 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530019.953484}
+2025/09/22 08:33:40 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530020.9469037}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 293)
+2025/09/22 08:33:41 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530021.9456694}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 294)
+2025/09/22 08:33:42 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530022.9467742}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 295)
+2025/09/22 08:33:43 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530023.9469714}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 296)
+2025/09/22 08:33:44 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530024.952014}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 297)
+2025/09/22 08:33:45 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530025.945489}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 298)
+2025/09/22 08:33:46 POLARIS_LOG {"event":"send_rate","rate":304000,"ts":1758530026.9460273}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 299)
+2025/09/22 08:33:47 POLARIS_LOG {"event":"send_rate","rate":296000,"ts":1758530027.9455256}
+We need to sleep for 1 seconds before we can get the results
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 300)
+2025/09/22 08:33:48 POLARIS_LOG {"event":"send_rate","rate":8000,"ts":1758530028.9484532}
+Drain Loop received packet
+Drain Loop received non-nil payload
+Client sent 11250 packets, server reported 11218 packets received
+The network loss rate from client to server is 0.3%
+
+S->C results
+Attempted bandwidth: 0 bps / 0.00 Mbps
+Achieved bandwidth: 0 bps / 0.00 Mbps
+Loss rate: 0.0%
+Interarrival time min/avg/max/mdev = -0.000/0.000/0.000/0.000 ms
+
+C->S results
+Attempted bandwidth: 300000 bps / 0.30 Mbps
+Achieved bandwidth: 299146 bps / 0.30 Mbps
+Loss rate: 0.3%
+Interarrival time min/avg/max/mdev = 0.002/26.729/112.894/9.282 ms

@@ -26,6 +26,8 @@ def main():
                         help="Optional link capacity in Mbps for normalization and summaries")
     parser.add_argument("--tcspec", dest="tc_spec", default=None,
                         help="Optional JSON file describing tc events to execute during the experiment")
+    parser.add_argument("--pcaspec", dest="pca_spec", default=None,
+                        help="Optional JSON file describing pca events to execute during the experiment")
     args = parser.parse_args()
 
     spec = Path(args.spec_file)
@@ -33,10 +35,12 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
 
     # 1) Traffic generation
+    traffic_command = [sys.executable, "traffic_generator_v3.py", str(spec), str(out)]
     if args.tc_spec is not None:
-        run_cmd([sys.executable, "traffic_generator_v3.py", str(spec), str(out), "--tcspec", args.tc_spec])
-    else:
-        run_cmd([sys.executable, "traffic_generator_v2.py", str(spec), str(out)])
+        traffic_command += ["--tcspec", args.tc_spec]
+    if args.pca_spec is not None:
+        traffic_command += ["--pcaspec", args.pca_spec]
+    run_cmd(traffic_command)
 
     # 2) Plot path switches
     run_cmd([sys.executable, "plot_path_switches_grouped.py", "--base", str(out)])

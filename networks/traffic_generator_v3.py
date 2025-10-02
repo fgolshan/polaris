@@ -209,6 +209,115 @@ class TCExecutor:
             except subprocess.CalledProcessError as e:
                 print(f"[tc] failed to restore bandwidth on {container}/{interface}: {e}")
 
+class PCAExecutor:
+    """
+    Execute policy-push events to the router admin endpoint (/polaris/te/rules)
+    at scheduled times during the experiment.
+
+    pcaspec JSON:
+    {
+      "events": [
+        {
+          "time": "150s",
+          "host": "112/br_112_113_2",
+          "event": "polaris_rule",
+          "mode": "merge",             # or "replace"
+          "rules": "rules": [
+            {
+            "id": "any-unique-string",
+            "scope": { "ingress_ifid": null, "egress_ifid": null }, 
+            "match": { "code": null },             
+            "action": {
+                "emit_pca": true,
+                "pca_code": 1,                   
+                "switch_to_ifid": 2,
+                "budget": 5,            # or 30%
+                "expires_after": "300s"
+            }
+          ]
+        }
+      ]
+    }
+    """
+
+    def __init__(self, pca_spec):
+        self._stop_event = threading.Event()
+        self._thread = None
+        events = pca_spec.get("events", []) if pca_spec else []
+        def _parse_time(e):
+            try:
+                return parse_duration(str(e.get("time", "0")))
+            except Exception:
+                return 0.0
+        # Sort by absolute time like TCExecutor
+        self.events = sorted(events, key=_parse_time)
+
+    def start(self):
+        if not self.events:
+            return
+        self._thread = threading.Thread(target=self._run, daemon=True)
+        self._thread.start()
+
+    def join(self):
+        if self._thread:
+            self._thread.join()
+
+    def stop(self):
+        self._stop_event.set()
+        if self._thread:
+            self._thread.join(timeout=5)
+
+    def _run(self):
+        last_time = 0.0
+        for ev in self.events:
+            if self._stop_event.is_set():
+                break
+            try:
+                t = parse_duration(str(ev.get("time", "0")))
+            except Exception:
+                t = 0.0
+            delay = t - last_time
+            if delay > 0:
+                if self._stop_event.wait(delay):
+                    break
+            self._handle_event(ev)
+            last_time = t
+
+    def _handle_event(self, ev):
+        evt_type = ev.get("event")
+        if evt_type != "polaris_rule":
+            print(f"[pca] unknown event type '{evt_type}' in {ev}")
+            return
+
+        host = ev.get("host")
+        mode = ev.get("mode", "merge")
+        rules = ev.get("rules", [])
+
+        if not host:
+            print(f"[pca] missing host in event: {ev}")
+            return
+
+        try:
+            container = find_container(host)  # reuse existing logic
+        except Exception as e:
+            print(f"[pca] could not find container for host {host}: {e}")
+            return
+
+        payload = {"mode": mode, "rules": rules}
+        url = f"http://localhost:{METRICS_PORT}/polaris/te/rules"
+        cmd = [
+            "docker", "exec", container, "curl", "-sS", "-X", "POST",
+            "-H", "Content-Type: application/json",
+            "--data", json.dumps(payload),
+            url,
+        ]
+        try:
+            out = subprocess.check_output(cmd, stderr=subprocess.STDOUT, text=True)
+            print(f"[pca] pushed rules to {container}: {out.strip()}")
+        except subprocess.CalledProcessError as e:
+            print(f"[pca] ERROR pushing rules to {container}: {e.output.strip()}")
+        except Exception as e:
+            print(f"[pca] ERROR pushing rules to {container}: {e}")
 
 def list_border_routers():
     out = subprocess.check_output(
@@ -447,6 +556,9 @@ def main():
     # Optional tc_spec argument for traffic control events
     parser.add_argument("--tcspec", dest="tc_spec", default=None,
                         help="JSON file describing tc events to execute during the experiment")
+    parser.add_argument("--pcaspec", dest="pca_spec", default=None,
+                    help="JSON file describing P-CA (TE rule) events to push to routers")
+
     args = parser.parse_args()
 
     with open(args.spec_file) as f:
@@ -471,6 +583,19 @@ def main():
         except Exception as e:
             print(f"[tc] failed to load tc spec {args.tc_spec}: {e}")
 
+    # Load pca spec if provided and start executor
+    pca_executor = None
+    if args.pca_spec:
+        try:
+            with open(args.pca_spec) as f:
+                pca_spec_data = json.load(f)
+            pca_executor = PCAExecutor(pca_spec_data)
+            pca_executor.start()
+            print(f"[pca] loaded pca spec from {args.pca_spec} with {len(pca_executor.events)} events")
+        except Exception as e:
+            print(f"[pca] failed to load pca spec {args.pca_spec}: {e}")
+
+
     threads = []
     for spec in specs:
         t = threading.Thread(target=run_session, args=(spec, args.out_dir, port_pool), daemon=True)
@@ -484,6 +609,10 @@ def main():
     if 'tc_executor' in locals() and tc_executor is not None:
         # join without timeout to allow all events to complete
         tc_executor.join()
+
+    if pca_executor:
+        pca_executor.join()
+
 
     metrics_collector.stop()
 
@@ -512,6 +641,17 @@ def main():
                 print(f"[spec] {tc_dst} already in output dir; skipping copy")
         except FileNotFoundError:
             print(f"[spec] could not copy tc spec (missing?) {args.tc_spec}, skipping")
+
+    if args.pca_spec:
+        try:
+            pca_dst = Path(args.out_dir) / Path(args.pca_spec).name
+            if not (pca_dst.exists() and os.path.samefile(args.pca_spec, pca_dst)):
+                shutil.copy2(args.pca_spec, pca_dst)
+                print(f"Copied pca spec file to {pca_dst}")
+            else:
+                print(f"[spec] {pca_dst} already in output dir; skipping copy")
+        except FileNotFoundError:
+            print(f"[spec] could not copy pca spec (missing?) {args.pca_spec}, skipping")
 
 if __name__ == "__main__":
     main()

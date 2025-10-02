@@ -1,0 +1,68 @@
+{
+  "events": [
+    {
+      "time": "15s",
+      "host": "112/br_111_112_2",
+      "event": "polaris_rule",
+      "mode": "replace",
+      "rules": [
+        {
+          "id": "do-not-come-to-egress-5",
+          "scope": { "egress_ifid": 5 },
+          "match": { "code": 0 },
+          "action": {
+            "emit_pca": true,
+            "pca_code": 0,
+            "switch_to_ifid": null,
+            "budget": "1000",
+            "expires_after": "300s"
+          }
+        },
+        {
+          "id": "do-not-come-to-egress-6",
+          "scope": { "egress_ifid": 6 },
+          "match": { "code": 0 },
+          "action": {
+            "emit_pca": true,
+            "pca_code": 0,
+            "switch_to_ifid": null,
+            "budget": "1000",
+            "expires_after": "300s"
+          }
+        },
+        {
+          "id": "do-not-come-to-egress-7",
+          "scope": { "egress_ifid": 7 },
+          "match": { "code": 0 },
+          "action": {
+            "emit_pca": true,
+            "pca_code": 0,
+            "switch_to_ifid": null,
+            "budget": "1000",
+            "expires_after": "300s"
+          }
+        }
+      ]
+    },
+    {
+      "time": "18s",
+      "host": "112/br_111_112_2",
+      "event": "polaris_rule",
+      "mode": "merge",
+      "rules": [
+        {
+          "id": "leave-egress-5",
+          "scope": { "egress_ifid": 5 },
+          "match": { "code": 1 },
+          "action": {
+            "emit_pca": true,
+            "pca_code": 1,
+            "switch_to_ifid": 4,
+            "budget": "10",
+            "expires_after": "300s"
+          }
+        }
+      ]
+    }
+  ]
+}

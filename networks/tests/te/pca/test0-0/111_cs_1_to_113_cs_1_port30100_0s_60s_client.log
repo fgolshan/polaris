@@ -1,0 +1,88 @@
+
+Test parameters:
+client->server: 60 seconds, 1000 bytes, 7500 packets
+server->client: 60 seconds, 1000 bytes, 0 packets
+2025/09/17 14:38:34 POLARIS_LOG {"current_rate":0,"event":"path_switch","new":"2 2 5 2","trigger":"initialization","ts":1758119914.5475512}
+Polaris prober initialized with 38 paths
+Polaris prober initialized with local 1-111,10.111.0.71:32764 and remote 1-113,10.113.0.71
+2025/09/17 14:38:35 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119915.5478096}
+2025/09/17 14:38:36 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119916.5487368}
+2025/09/17 14:38:37 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119917.548479}
+2025/09/17 14:38:38 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119918.5484679}
+2025/09/17 14:38:39 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119919.5480745}
+2025/09/17 14:38:40 POLARIS_LOG {"event":"send_rate","rate":992000,"ts":1758119920.5478199}
+2025/09/17 14:38:41 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119921.5479667}
+2025/09/17 14:38:42 POLARIS_LOG {"event":"send_rate","rate":1008000,"ts":1758119922.5485122}
+2025/09/17 14:38:43 POLARIS_LOG {"event":"send_rate","rate":992000,"ts":1758119923.5485766}
+2025/09/17 14:38:44 POLARIS_LOG {"event":"send_rate","rate":1008000,"ts":1758119924.5482643}
+2025/09/17 14:38:45 POLARIS_LOG {"event":"send_rate","rate":992000,"ts":1758119925.5478315}
+2025/09/17 14:38:46 POLARIS_LOG {"event":"send_rate","rate":1008000,"ts":1758119926.548367}
+2025/09/17 14:38:47 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119927.5483246}
+2025/09/17 14:38:48 POLARIS_LOG {"event":"send_rate","rate":992000,"ts":1758119928.5478952}
+2025/09/17 14:38:49 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119929.5478294}
+SwitchToIfID P-CA (request granted): switching from 2 2 5 2 to 2 2 4 1 (candidates: 1)
+Received P-CA SwitchTo for path 2 2 5 2: origin 1-112, IfID 4 (reqID 32764, seq 15)
+2025/09/17 14:38:49 POLARIS_LOG {"candidates":1,"current_rate":1000000,"estimated_share":2000000,"event":"path_switch","new":"2 2 4 1","old":"2 2 5 2","pca_code":1,"pca_ifid":4,"pca_origin":"1-112","pca_sequence_number":15,"success_switchToIfID":true,"trigger":"P-CA","ts":1758119929.5571086}
+2025/09/17 14:38:50 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119930.548575}
+2025/09/17 14:38:51 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119931.548434}
+2025/09/17 14:38:52 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119932.548304}
+2025/09/17 14:38:53 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119933.5480192}
+2025/09/17 14:38:54 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119934.5487542}
+2025/09/17 14:38:55 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119935.548523}
+2025/09/17 14:38:56 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119936.5483632}
+2025/09/17 14:38:57 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119937.548825}
+2025/09/17 14:38:58 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119938.547852}
+2025/09/17 14:38:59 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119939.5481832}
+2025/09/17 14:39:00 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119940.5486255}
+2025/09/17 14:39:01 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119941.5483015}
+2025/09/17 14:39:02 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119942.5480115}
+2025/09/17 14:39:03 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119943.548289}
+2025/09/17 14:39:04 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119944.5479882}
+2025/09/17 14:39:05 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119945.5488138}
+2025/09/17 14:39:06 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119946.548456}
+2025/09/17 14:39:07 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119947.54867}
+2025/09/17 14:39:08 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119948.548602}
+2025/09/17 14:39:09 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119949.548126}
+2025/09/17 14:39:10 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119950.5483918}
+2025/09/17 14:39:11 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119951.548079}
+2025/09/17 14:39:12 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119952.5483136}
+2025/09/17 14:39:13 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119953.5484388}
+2025/09/17 14:39:14 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119954.548312}
+2025/09/17 14:39:15 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119955.5488682}
+2025/09/17 14:39:16 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119956.5482676}
+2025/09/17 14:39:17 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119957.548388}
+2025/09/17 14:39:18 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119958.5478892}
+2025/09/17 14:39:19 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119959.5485616}
+2025/09/17 14:39:20 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119960.5487788}
+2025/09/17 14:39:21 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119961.5485117}
+2025/09/17 14:39:22 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119962.5478146}
+2025/09/17 14:39:23 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119963.548815}
+2025/09/17 14:39:24 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119964.5481458}
+2025/09/17 14:39:25 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119965.5492167}
+2025/09/17 14:39:26 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119966.5479457}
+2025/09/17 14:39:27 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119967.5478973}
+2025/09/17 14:39:28 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119968.548041}
+2025/09/17 14:39:29 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119969.5485816}
+2025/09/17 14:39:30 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119970.548309}
+2025/09/17 14:39:31 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119971.5481575}
+2025/09/17 14:39:32 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119972.54822}
+2025/09/17 14:39:33 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119973.5484903}
+2025/09/17 14:39:34 POLARIS_LOG {"event":"send_rate","rate":1000000,"ts":1758119974.5479312}
+We need to sleep for 1 seconds before we can get the results
+2025/09/17 14:39:35 POLARIS_LOG {"event":"send_rate","rate":8000,"ts":1758119975.547957}
+Drain Loop received packet
+Drain Loop received non-nil payload
+Client sent 7500 packets, server reported 7500 packets received
+The network loss rate from client to server is 0.0%
+
+S->C results
+Attempted bandwidth: 0 bps / 0.00 Mbps
+Achieved bandwidth: 0 bps / 0.00 Mbps
+Loss rate: 0.0%
+Interarrival time min/avg/max/mdev = -0.000/0.000/0.000/0.000 ms
+
+C->S results
+Attempted bandwidth: 1000000 bps / 1.00 Mbps
+Achieved bandwidth: 1000000 bps / 1.00 Mbps
+Loss rate: 0.0%
+Interarrival time min/avg/max/mdev = 0.003/8.002/24.850/4.105 ms
