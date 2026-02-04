@@ -11,7 +11,7 @@ import shutil
 from datetime import datetime
 
 DEFAULT_PORT_START = 30100
-SLACK = 6.0
+SLACK = 8.0
 DEFAULT_SCRAPE_INTERVAL = 1.0
 METRICS_PORT = 9000
 
