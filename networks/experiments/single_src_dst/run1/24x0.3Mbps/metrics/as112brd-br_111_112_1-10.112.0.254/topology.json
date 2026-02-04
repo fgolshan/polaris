@@ -1,0 +1,121 @@
+{
+  "attributes": [
+    "voting",
+    "authoritative",
+    "core",
+    "issuing"
+  ],
+  "isd_as": "1-112",
+  "mtu": 1400,
+  "control_service": {
+    "cs_1": {
+      "addr": "10.112.0.71:30254"
+    }
+  },
+  "discovery_service": {
+    "cs_1": {
+      "addr": "10.112.0.71:30254"
+    }
+  },
+  "border_routers": {
+    "br_111_112_1": {
+      "internal_addr": "10.112.0.254:30042",
+      "interfaces": {
+        "1": {
+          "underlay": {
+            "local": "10.1.0.3:50000",
+            "remote": "10.1.0.2:50000"
+          },
+          "isd_as": "1-111",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_111_112_2": {
+      "internal_addr": "10.112.0.253:30042",
+      "interfaces": {
+        "2": {
+          "underlay": {
+            "local": "10.1.0.11:50000",
+            "remote": "10.1.0.10:50000"
+          },
+          "isd_as": "1-111",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_111_112_3": {
+      "internal_addr": "10.112.0.252:30042",
+      "interfaces": {
+        "3": {
+          "underlay": {
+            "local": "10.1.0.19:50000",
+            "remote": "10.1.0.18:50000"
+          },
+          "isd_as": "1-111",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_112_113_1": {
+      "internal_addr": "10.112.0.251:30042",
+      "interfaces": {
+        "4": {
+          "underlay": {
+            "local": "10.1.0.26:50000",
+            "remote": "10.1.0.27:50000"
+          },
+          "isd_as": "1-113",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_112_113_2": {
+      "internal_addr": "10.112.0.250:30042",
+      "interfaces": {
+        "5": {
+          "underlay": {
+            "local": "10.1.0.34:50000",
+            "remote": "10.1.0.35:50000"
+          },
+          "isd_as": "1-113",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_112_114_1": {
+      "internal_addr": "10.112.0.249:30042",
+      "interfaces": {
+        "6": {
+          "underlay": {
+            "local": "10.1.0.82:50000",
+            "remote": "10.1.0.83:50000"
+          },
+          "isd_as": "1-114",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    },
+    "br_112_114_2": {
+      "internal_addr": "10.112.0.248:30042",
+      "interfaces": {
+        "7": {
+          "underlay": {
+            "local": "10.1.0.90:50000",
+            "remote": "10.1.0.91:50000"
+          },
+          "isd_as": "1-114",
+          "link_to": "CORE",
+          "mtu": 1280
+        }
+      }
+    }
+  },
+  "dispatched_ports": "31000-32767"
+}

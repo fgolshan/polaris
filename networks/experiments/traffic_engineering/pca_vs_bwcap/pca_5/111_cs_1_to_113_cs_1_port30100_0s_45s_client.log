@@ -1,0 +1,103 @@
+
+Test parameters:
+client->server: 45 seconds, 1000 bytes, 11250 packets
+server->client: 45 seconds, 1000 bytes, 0 packets
+Polaris prober initialized with 38 paths
+Polaris prober initialized with local 1-111,10.111.0.71:32764 and remote 1-113,10.113.0.71
+2025/10/15 11:23:44 POLARIS_LOG {"current_rate":0,"event":"path_switch","new":"2 2 5 2","trigger":"initialization","ts":1760527424.9196022}
+2025/10/15 11:23:45 POLARIS_LOG {"event":"send_rate","rate":1992000,"ts":1760527425.9203908}
+2025/10/15 11:23:46 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527426.9204686}
+2025/10/15 11:23:47 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527427.9210334}
+2025/10/15 11:23:48 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527428.9203095}
+2025/10/15 11:23:49 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527429.9202318}
+2025/10/15 11:23:50 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527430.921057}
+2025/10/15 11:23:51 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527431.9205952}
+2025/10/15 11:23:52 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527432.920302}
+2025/10/15 11:23:53 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527433.920216}
+2025/10/15 11:23:54 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527434.9220457}
+2025/10/15 11:23:55 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527435.9204214}
+2025/10/15 11:23:56 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527436.920412}
+2025/10/15 11:23:57 POLARIS_LOG {"event":"send_rate","rate":1992000,"ts":1760527437.9210014}
+2025/10/15 11:23:58 POLARIS_LOG {"event":"send_rate","rate":2008000,"ts":1760527438.9203324}
+SwitchToIfID P-CA (request granted): switching from 2 2 5 2 to 2 2 4 1 (candidates: 1)
+Received P-CA SwitchTo for path 2 2 5 2: origin 1-112, IfID 4 (reqID 32764, seq 14)
+2025/10/15 11:23:58 POLARIS_LOG {"candidates":1,"current_rate":2008000,"estimated_share":1000000,"event":"path_switch","new":"2 2 4 1","old":"2 2 5 2","pca_code":1,"pca_ifid":4,"pca_origin":"1-112","pca_sequence_number":14,"success_switchToIfID":true,"trigger":"P-CA","ts":1760527438.9263678}
+2025/10/15 11:23:59 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527439.9202085}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 15)
+2025/10/15 11:24:00 POLARIS_LOG {"event":"send_rate","rate":1992000,"ts":1760527440.9204338}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 16)
+2025/10/15 11:24:01 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527441.9202163}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 17)
+2025/10/15 11:24:02 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527442.9208272}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 18)
+2025/10/15 11:24:03 POLARIS_LOG {"event":"send_rate","rate":2000000,"ts":1760527443.9204433}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 19)
+2025/10/15 11:24:04 POLARIS_LOG {"event":"send_rate","rate":2008000,"ts":1760527444.9204514}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 20)
+2025/10/15 11:24:05 POLARIS_LOG {"event":"send_rate","rate":1992000,"ts":1760527445.9202573}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 21)
+2025/10/15 11:24:06 POLARIS_LOG {"event":"send_rate","rate":2008000,"ts":1760527446.9202938}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 22)
+2025/10/15 11:24:07 POLARIS_LOG {"event":"send_rate","rate":1904000,"ts":1760527447.9205616}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 23)
+2025/10/15 11:24:08 POLARIS_LOG {"event":"send_rate","rate":1752000,"ts":1760527448.9207451}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 24)
+2025/10/15 11:24:09 POLARIS_LOG {"event":"send_rate","rate":1688000,"ts":1760527449.9205315}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 25)
+2025/10/15 11:24:10 POLARIS_LOG {"event":"send_rate","rate":1736000,"ts":1760527450.9206367}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 26)
+2025/10/15 11:24:11 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527451.9206324}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 27)
+2025/10/15 11:24:12 POLARIS_LOG {"event":"send_rate","rate":1656000,"ts":1760527452.9209988}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 28)
+2025/10/15 11:24:13 POLARIS_LOG {"event":"send_rate","rate":1680000,"ts":1760527453.9210742}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 29)
+2025/10/15 11:24:14 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527454.920373}
+Skipping switch: current path 2 2 4 1 has lastEstimate 1000000 >= maxEstimate 0
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 30)
+2025/10/15 11:24:15 POLARIS_LOG {"event":"send_rate","rate":1696000,"ts":1760527455.9211357}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 31)
+2025/10/15 11:24:16 POLARIS_LOG {"event":"send_rate","rate":1496000,"ts":1760527456.921199}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 32)
+2025/10/15 11:24:17 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527457.9211502}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 33)
+2025/10/15 11:24:18 POLARIS_LOG {"event":"send_rate","rate":1616000,"ts":1760527458.920915}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 34)
+2025/10/15 11:24:19 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527459.9205272}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 35)
+2025/10/15 11:24:20 POLARIS_LOG {"event":"send_rate","rate":1704000,"ts":1760527460.9205525}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 36)
+2025/10/15 11:24:21 POLARIS_LOG {"event":"send_rate","rate":1736000,"ts":1760527461.9206057}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 37)
+2025/10/15 11:24:22 POLARIS_LOG {"event":"send_rate","rate":1704000,"ts":1760527462.9207213}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 38)
+2025/10/15 11:24:23 POLARIS_LOG {"event":"send_rate","rate":1456000,"ts":1760527463.9212303}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 39)
+2025/10/15 11:24:24 POLARIS_LOG {"event":"send_rate","rate":1648000,"ts":1760527464.9204502}
+Skipping switch: current path 2 2 4 1 has lastEstimate 1000000 >= maxEstimate 0
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 40)
+2025/10/15 11:24:25 POLARIS_LOG {"event":"send_rate","rate":1704000,"ts":1760527465.9210856}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 41)
+2025/10/15 11:24:26 POLARIS_LOG {"event":"send_rate","rate":1712000,"ts":1760527466.921044}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 42)
+2025/10/15 11:24:27 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527467.9204562}
+Received default P-CA for path 2 2 5 2, from AS 1-112, IfID 5 (reqID 32764, seq 43)
+2025/10/15 11:24:28 POLARIS_LOG {"event":"send_rate","rate":1736000,"ts":1760527468.9213943}
+2025/10/15 11:24:29 POLARIS_LOG {"event":"send_rate","rate":1400000,"ts":1760527469.920261}
+2025/10/15 11:24:30 POLARIS_LOG {"event":"send_rate","rate":1720000,"ts":1760527470.9208372}
+Drain Loop received packet
+Drain Loop received non-nil payload
+Client sent 10542 packets, server reported 10440 packets received
+The network loss rate from client to server is 1.0%
+
+S->C results
+Attempted bandwidth: 0 bps / 0.00 Mbps
+Achieved bandwidth: 0 bps / 0.00 Mbps
+Loss rate: 0.0%
+Interarrival time min/avg/max/mdev = -0.000/0.000/0.000/0.000 ms
+
+C->S results
+Attempted bandwidth: 2000000 bps / 2.00 Mbps
+Achieved bandwidth: 1856000 bps / 1.86 Mbps
+Loss rate: 7.2%
+Interarrival time min/avg/max/mdev = 0.002/4.406/30.123/5.071 ms
