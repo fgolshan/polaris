@@ -26,17 +26,6 @@ The `networks/` folder contains:
 - **Plotting and analysis scripts**, including a script for plotting **network snapshots**.
 - **Results** from the performed experiments (as produced by the scripts).
 
-## How to use (high level)
-
-1. **Set up the dependencies** by following the instructions in each sub-repository:
-   - `scionproto/`
-   - `scion-apps/`
-   - `seed-emulator/`
-
-2. **Run the experiment tooling** from `networks/` as needed.
-   - Most scripts support `--help` for usage and arguments.
-   - Typical workflow: generate/launch a topology → replace relevant binaries → run automated experiments → plot results.
-
 ## Getting started (quickstart)
 
 This repo is a meta-repository that ties together multiple components via Git submodules (`scionproto/`, `scion-apps/`, `seed-emulator/`) and provides experiment tooling under `networks/`. The steps below get you from a fresh clone to a first end-to-end experiment run.
@@ -137,7 +126,7 @@ You’re now ready to run an end-to-end experiment using `run_single_experiment.
 
 The script will:
 - generate traffic flows according to a JSON specification,
-- optionally apply traffic engineering (TE) events and/or bandwidth capping,
+- optionally apply traffic engineering (TE) events and/or bandwidth capping according to optional JSON specifications,
 - collect client/server logs and router metrics (Prometheus),
 - produce summary files and plots.
 
@@ -173,7 +162,6 @@ After the experiment finishes, check `networks/tests/tmp/`. You should find:
 - client and server output logs,
 - a `metrics/` folder with Prometheus metrics of all routers (plus aggregates and visualizations), including router topology files,
 - `loss_summary.txt` and `loss_stats.csv`,
-- `loss_stats.csv`,
 - a path switch timeline plot.
 
 Optional: generate network flow distribution snapshot plots for each path switch:
@@ -184,5 +172,18 @@ python draw_snapshots.py tests/tmp/
 
 ## Notes
 
-- This repo is intended as a companion artifact to the thesis.
-- For SCION build and runtime details, defer to the documentation within the respective sub-repositories.
+## Notes / gotchas
+
+- **Traffic generator:** only `traffic_generator_v3.py` is relevant — ignore older versions (`v1`, `v2`, …).
+- **Replacing binaries:** use the **Python** replacement script (`replace_binaries.py`) and ignore the shell-based alternative.
+- **Batch runs:** `run_batch_experiments.py` can orchestrate multiple experiments in one run (built on top of `run_single_experiment.py`). Depending on what you want to automate, you may find it easiest to write your own orchestration scripts tailored to your workflow.
+- **Disk usage / cleanup:** use `remove_raws.py` and `remove_binaries.py` to recursively clean experiment output folders (removes Prometheus raw dumps and intermediate artifacts and can free a lot of space). Only final aggregated data and plots are kept. If you plan to run many experiments, consider adding compression to your experiment pipeline.
+- **Metrics + plotting:** the `plot_interface_*` scripts process and visualize router Prometheus metrics. Outputs are placed in the experiment’s `metrics/` folder.
+- **Stray servers:** if an experiment is interrupted and you end up with stray bandwidth test servers running in the network, use `cleanup_servers.sh`.
+- **Long-running topology issues:** if a topology has been running for a long time (e.g., **> 1 week**) or was built a long time ago (e.g., **~1 month**) and SCION connectivity suddenly breaks, the simplest fix I’ve found is:
+  1. Shut down containers: `docker compose down`
+  2. Go to `./networks/polaris-topo-full` and run `cleanup_docker.sh`
+  3. Restart Docker: `sudo systemctl restart docker`
+  4. Delete the topology output folder
+  5. Regenerate the topology via your Python script and launch it again
+- **Need help?** Contact me if you run into issues.
