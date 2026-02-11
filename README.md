@@ -170,8 +170,6 @@ Optional: generate network flow distribution snapshot plots for each path switch
 python draw_snapshots.py tests/tmp/
 ```
 
-## Notes
-
 ## Notes / gotchas
 
 - **Traffic generator:** only `traffic_generator_v3.py` is relevant — ignore older versions (`v1`, `v2`, …).
